@@ -2,10 +2,8 @@
 observations <- rnorm(1000, mean = 0, sd = 2)
 # 2 calculate proportion of observations that are greater than 2
 mydf <- data.frame(x = observations) # save observations in a dataframe
-
 proportion = sum(mydf > 2)/1000
 proportion
-prop.table(mydf)
 
 
 #Professor Solution

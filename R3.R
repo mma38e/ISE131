@@ -13,3 +13,21 @@ require(plotrix)
 plot(-1:1,-1:1,type = "l",main = "Circle")
 draw.circle(1,0,.5,nv=100,border=NULL,col=NA,lty=1,lwd=1)
 
+#teacher solution
+
+rm(list = ls())
+count = 5
+phi = 2*pi/count
+#allocate memory
+x = rep(0,count + 1)
+y = rep(0,count + 1)
+#inital point
+x[1] = 1
+y[1] = 0
+
+for (index in 1:5){
+  x[index+1] = cos(index * phi)
+  y[index + 1] = sin(index * phi)
+}
+
+plot(x,y,type = "l",main = "Assignment R3")
