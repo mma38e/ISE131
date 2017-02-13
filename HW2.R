@@ -1,4 +1,4 @@
-# 1 get 1000 observations from popoulation with distribtuion N(0,4)
+# 1 get 1000 observations from popoulation with distribtuion N(0,4) 4 = variance
 observations <- rnorm(1000, mean = 0, sd = 2)
 # 2 calculate proportion of observations that are greater than 2
 mydf <- data.frame(x = observations) # save observations in a dataframe
